@@ -5,8 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <style>
+        body {
+            background-color: beige;
+        }
+    </style>
+
+    <link rel="stylesheet" href="/app.css">
+    
 </head>
 <body>
+
+    <form action="" autocomplete="off">
+        <input type="text" value="Esto es un texto precargado">
+
+        <input type="email" placeholder="fede@gmail.com">
+
+        <input type="password">
+
+        <input type="hidden">
+
+        <input type="tel">
+
+        <input type="date">
+
+        <input type="color">
+        
+        <input type="number" min="18" max="40" step=".5"> 
+
+        <p>
+            <input type="file" accept="image/*">
+        </p>
+
+        <p>Cuáles de estos lenjuajes conocés?</p>
+        <input type="checkbox" checked>JS
+        <input type="checkbox">TS
+        <input type="checkbox" checked>JAVA
+        <input type="checkbox">PHP
+
+        <p>Qué curso querés tomar?</p>
+        <input type="radio" name="curso">Backend
+        <input type="radio" name="curso">Frontend
+
+        <br>
+        <textarea name="" id="" cols="30" rows="10">Esto es un texto precargado...</textarea>
+        
+
+        <p>En qué país vivís?</p>
+        <select name="" id="">
+            <option value=""></option>
+            <option value="ARG" selected>Argentina</option>
+            <option value="CHL">Chile</option>
+            <option value="URU">Uruguay</option>
+        </select>
+
+        <br><br>
+        <button type="submit">Enviar</button>
+        <button type="button">Imprimir</button>
+    </form>
+
+    <br>
+
+    <iframe width="727" height="409" src="https://www.youtube.com/embed/wfE40ePstaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Título uno</h1>
+    <h2>Título dos</h2>
+    <h3>Título tres</h3>
+    <h4>Título cuatro</h4>
+
+    <table border="1">
+        <thead> <!--Título de columna-->
+            <th>ID</th> <!--th son cada una de las columnas-->
+            <th>Email</th>
+            <th>Fecha de registro</th>
+        </thead>
+
+        <tbody> <!--Contenido de la tabla-->
+            <tr> <!-- tr son cada una de las filas-->
+                <th>1234</th>
+                <th>fede@gmail.com</th>
+                <th>27/07/2019</th>
+            </tr>
+        </tbody>
+            <tr>
+                <th><< Anterior</th>
+                <th></th>
+                <th>Siguiente >></th>
+            </tr>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+
+    <div>
+        <span>Lista de Jugadores del partido</span>
+        <ul>
+            <li>
+                <a href="http://www.google.com" target="_blank">Lionel Messi</a>
+                <!--El target se usa pasa que el usuario no se vaya de mi web, me abre la web que referncio en una nueva pestaña.-->
+            </li>
+            <li>Kun Aguero</li>
+            <li>Mauro Icardi</li>
+            <li>
+                Suplentes
+                <ul>
+                    <li>Jugador 1</li>
+                    <li>Jugador 2</li>
+                    <li>Jugador 3</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <i>Esto es un texto en italica</i>
+    <br>
+    <b>Esto es un texto en negrita</b>
+    <br>
+    <strong>Strong: Esto es un texto más importante</strong>
+
+
     <h1>Hola mundo!!</h1>
     <div>
         <img src="https://placeimg.com/640/480/tech" alt="">
