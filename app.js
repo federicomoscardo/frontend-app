@@ -44,6 +44,14 @@ app.get('/contacto', function(req, res) {
 
 })
 
+app.get('/home', function(req, res) {
+
+    let file = path.resolve('src', 'home.html')
+
+    res.sendFile(file)
+
+})
+
 //toda app funciona a través de un puerto, configuramos qué puerto va a estar escuchando esta app (por lo general el 3000)
 app.listen(3000)
 
