@@ -12,7 +12,9 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 // http://localhost:3000/
-// no se incluyen 
+// no se incluye la URL del servidor de mi web, solo a partir del /...
+// http://www.miaplicacion.com.ar/(a partir de acá es lo que vay a definir en los GET!!!)
+// http://www.miaplicacion.com.ar NO IMPORTA!! Puede ser cualquier cosa, todo lo que viene dsps del / es la estructura de mi web...
 
 // SIEMPRE TIENE QUE HABER UNA RUTA PRINCIPAL: app.get('/' ....)
 
@@ -37,6 +39,14 @@ app.get('/', function(req, res) {
 app.get('/contacto', function(req, res) {
 
     let file = path.resolve('src', 'contacto.html')
+
+    res.sendFile(file)
+
+})
+
+app.get('/home', function(req, res) {
+
+    let file = path.resolve('src', 'home.html')
 
     res.sendFile(file)
 
